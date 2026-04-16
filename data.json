@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "title": "Best Price - Sample Lamp",
+      "brand": "Best Price",
+      "category": "Home Decor",
+      "image": "https://via.placeholder.com/300",
+      "url": "https://example.com"
+    },
+    {
+      "title": "Kuchenland Candle Set",
+      "brand": "Kuchenland",
+      "category": "Luxury Decor",
+      "image": "https://via.placeholder.com/300",
+      "url": "https://example.com"
+    }
+  ]
+}
