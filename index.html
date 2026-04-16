@@ -1,0 +1,26 @@
+<script>
+const API_URL = "data.json";
+
+async function loadData() {
+    const res = await fetch(API_URL);
+    const data = await res.json();
+
+    const app = document.getElementById("app");
+    app.innerHTML = "";
+
+    data.products.forEach(p => {
+        app.innerHTML += `
+            <div class="card">
+                <h3>${p.title}</h3>
+                <img src="${p.image}">
+                <div class="tag">${p.brand}</div>
+                <div class="tag">${p.category}</div>
+                <br>
+                <a href="${p.url}" target="_blank">View Product</a>
+            </div>
+        `;
+    });
+}
+
+loadData();
+</script>
